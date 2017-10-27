@@ -273,10 +273,7 @@ uint16_t uint16FromBigEndian(unsigned char*p);
             break;
         }
     }
-    // Must have at least one text load.
-    if ([payloadTexts count] == 0) {
-        return nil;
-    }
+
     smartPoster.payloadTexts = payloadTexts;
     return smartPoster;
 }
